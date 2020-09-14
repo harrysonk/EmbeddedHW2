@@ -20,7 +20,7 @@ void Question1A()
 	volatile char mask = 0x20;
 	
 	//If bit 5 in ch1 is 1 set ch2 to 1, otherwise set ch2 to 0
-	ch2 = ((ch1 >> 4) & 1) ? 1 : 0;
+	ch2 = ((ch1 >> 5) & 1) ? 1 : 0;
 }
 
 void Question1B()
@@ -30,8 +30,8 @@ void Question1B()
 	//Declare mask, initialize it to 1
 	volatile char mask = 1;
 	
-	//Set bit 7 to be 1, result should be 0x74
-	ch1 = (ch1|(mask << 6));
+	//Set bit 7 to be 1, result should be 0xB4
+	ch1 = (ch1|(mask << 7));
 }
 
 void Question1C()
@@ -41,8 +41,8 @@ void Question1C()
 	//Declare mask, initialize it to 1 
 	volatile char mask = 1;
 	
-	//Clear bit 3 to 0, result should be 0x30
-	ch1 = (ch1&~(mask << 2));
+	//Clear bit 3 to 0, result should still be 0x34
+	ch1 = (ch1&~(mask << 3));
 }
 
 void Question1D()
@@ -52,8 +52,8 @@ void Question1D()
 	//Declare mask, initialize it to 1 
 	volatile char mask = 1;
 	
-	//Toggle bit 4 to 1, result should be 0x3C
-	ch1 = (ch1^(mask << 3));
+	//Toggle bit 4 to 1, result should be 0x24
+	ch1 = (ch1^(mask << 4));
 }
 int main(void)
 {    
