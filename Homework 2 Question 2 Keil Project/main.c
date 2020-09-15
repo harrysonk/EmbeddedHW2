@@ -1,9 +1,9 @@
 /*******************************************************************
- *  main.c
- *  This is an embedded program template.
- *  
- *  Author: G. Serpen
- *  Date: Date: May 22, 2017
+ *  EECS3100HW2
+ *  Problem 2
+ *  Written by Harrison Kania
+ *  Computes the factorial of 5
+ * 
  *
  *  
  *******************************************************************/
@@ -20,6 +20,8 @@ int main(void)
 	int i;
 	
 	//For loop to calculate the factorial of 5
+	//Loops through 5 times and multiplies the number by itself each time
+	//This will result in the correct factorial of 5, 120
 	for(i = 1; i <= 5; i++)
 	{
 		factorialOf5 *= i;

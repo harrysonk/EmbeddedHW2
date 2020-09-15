@@ -1,15 +1,14 @@
 /*******************************************************************
- *  main.c
- *  This is an embedded program template.
- *  
- *  Author: G. Serpen
- *  Date: Date: May 22, 2017
+ *  EECS3100HW2
+ *  Question 1
+ *  Written by Harrison Kania
+ *  Four seperate C code snippets 
+ *  All concern the topic of bit manipulation
  *
  *  
  *******************************************************************/
 
 // Called by startup assembly code, start of C code
-
 void Question1A()
 {
 	//Declare ch1, initialize it to 0x34
@@ -55,6 +54,7 @@ void Question1D()
 	//Toggle bit 4 to 1, result should be 0x24
 	ch1 = (ch1^(mask << 4));
 }
+//Main method, calls parts A,B,C, and D of question.
 int main(void)
 {    
 	Question1A();

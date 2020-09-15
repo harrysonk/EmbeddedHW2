@@ -1,9 +1,10 @@
 /*******************************************************************
- *  main.c
- *  This is an embedded program template.
+ *  EECS3100HW2
+ *  Question 3
+ *  Written by Harrison Kania
+ *  Loops through an array to find the maximum value
+ * 
  *  
- *  Author: G. Serpen
- *  Date: Date: May 22, 2017
  *
  *  
  *******************************************************************/
